@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300&display=swap');
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+
+
+/* Layout */
+body {font-family:'Nanum Gothic', sans-serif;}
+.wrap {width: 100%;}
+
+header {width: 100%; height: 110px;}
+.innerheader {width: 100%;}
+.innerheader .top {background: #4B4B4B; width: 100%;}
+.innerheader .top ul {width: 100%; display: flex; margin-left: 78%; padding: 4px; font-size: 14px;}
+.innerheader .top ul li {margin-right: 30px; color: white;}
+.innerheader .top ul li span {color: #AAFCFF;}
+.innerheader h1.logo {width: 13%;display:block; float: left; margin-top: 25px; padding-left: 130px;}
+.innerheader h1.logo img {width: 100%;}
+.innerheader ul.left {width: 40%; overflow: hidden; margin-top: 32px; display: inline-block; padding-left: 300px; }
+.innerheader ul.left li {width: 25%; float: left; text-align: center;}
+.innerheader ul.right {width: 15%;text-align: center; float: right; margin-top: 25px; padding-right: 100px;}
+.innerheader ul.right li {width: 30%; border: 2px solid red; margin-right: 5px; float: left; padding: 5px 3px; border-radius: 50px; box-sizing: border-box; color: white; background: red; font-weight: bold;}
+.innerheader ul.right li:nth-child(1) {width: 50%; background: white; color: red;}
+.innerheader .tapMenu {width: 100%;}
+.innerheader .tapMenu ul {width: 100%; padding: 0px; margin-top: 25px; border: 1px solid #CCCCCC; box-sizing: border-box; overflow: hidden;}
+.innerheader .tapMenu ul li {width: 10%; height: 35px ; border-right: 1px solid #CCCCCC; float: left; box-sizing: border-box; padding: 10px; font-size: 14px; color: #707070;}
+.innerheader .tapMenu ul li:nth-child(1) {width: 2.5%;}
+.innerheader .tapMenu ul i.fa-home {width: 100%; color: #CCCCCC; font-size: 25px; transform: translate(0%,-20%);}
+.innerheader .tapMenu ul i.fa-chevron-down {color: #CCCCCC; margin-left: 30px;}
+
+/* hover */
+.innerheader ul.left li:hover {color: red; font-weight: bold; transition: all 0.3s;}
+
+/* visual */
+.visual {width: 1920px; height: 1100px; background: url(../img/boy01.png); margin-top: 31px;}
+.visual h3 {font-size: 60px;font-family: 'Noto Sans KR', sans-serif; font-weight: 100; text-align: center; padding-top: 130px;}
+.visual h3 span.a {font-weight: bold; margin-right: 18px;}
+.visual h3 span.b {font-weight: bold; color: red;}
+
+/* point */
+.point {width: 1920px; height: 1100px; clear: both;}
+.point .inner {width: 1400px;margin: 0 auto; overflow: hidden;}
+.point .inner ul {width: 100%; display: flex; justify-content: space-between; margin-top: 250px;}
+.point .inner ul h3 {font-size: 50px; padding-top: 85px; margin-bottom: 40px;} 
+.point .inner ul li.left {width: 60%;line-height: 1.8;}
+.point .inner ul li.left span {font-weight: bold;}
+.point .inner ul li.right {width: 40%; padding-right: 100px;}
+.point .inner ul li.right p.imgBox {width: 100%; overflow: hidden;}
+.point .inner ul li.right p.imgBox img {width: 100%;}
+
+/* graph */
+.graph {width: 1920px; height: 800px;}
+.graph .inner {width: 1400px; margin: 0 auto; overflow: hidden; margin-top: 150px;}
+.graph .inner .titBox {width: 100%; text-align: center; margin-bottom: 150px;}
+.graph .inner .titBox > h3 {font-size: 60px; font-family: 'Noto Sans KR', sans-serif; font-weight: 100; margin-bottom: 30px;}
+.graph .inner .titBox h3 span.left {font-weight: bold; margin-right: 18px;}
+.graph .inner .titBox h3 span.right {font-weight: bold; color: red;}
+.graph .inner .titBox p {line-height: 1.8;}
+.graph .inner ul {width: 100%; display: flex;}
+.graph .inner ul li {width: 50%;}
+.graph .inner ul li p {padding-left: 83px;}
+.graph .inner ul li:nth-child(2) {line-height: 1.8;}
+.graph .inner ul li:nth-child(2) span {font-weight: bold;}
+
+
+.wrap .topButton {background: red; display: block; width: 60px; height: 60px; font-size: 14px; border-radius: 50%; text-align: center; line-height: 60px; color: white; position: absolute; right: 3%; bottom: 10%; position: fixed;}
+
+
+/* footer */
+footer {width: 100%; height: 240px; background: url(../img/back.png) no-repeat; margin-top: 100px;}
+.contents {width: 80%; margin: 0 auto; overflow: hidden; padding-top: 120px;}
+.contents h1 {width: 30%; float: left;}
+.contents h1 img {width: 35%; padding-left: 150px; padding-top: 30px;}
+.contents p {width: 55%;float: left; line-height: 2;}
+.contents ul {width: 11%; float: left;}
+.contents ul li {width: 30%; height: 30%; border: 1px solid white; float: left; margin-right: 8px; box-sizing: border-box;}
+.contents ul li img {width: 100%;}
+.contents ul li:nth-child(4) {margin-right: 0;}
+.contents ul li:nth-child(1) {width: 100%; margin-bottom: 10px; border: 0;}
+
+
+
+
+
+
+
+
+
