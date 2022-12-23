@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300&display=swap');
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+
+
+/* Layout */
+body {font-family:'Nanum Gothic', sans-serif;}
+.wrap {width: 100%; overflow: hidden;}
+
+header {width: 100%; height: 110px; }
+.innerheader {width: 100%;}
+.innerheader .top {background: #4B4B4B; width: 100%;}
+.innerheader .top ul {width: 100%; display: flex; margin-left: 78%; padding: 4px; font-size: 14px;}
+.innerheader .top ul li {margin-right: 30px; color: white;}
+.innerheader .top ul li span {color: #AAFCFF;}
+.innerheader h1.logo {width: 13%;display:block; float: left; margin-top: 25px; padding-left: 130px;}
+.innerheader h1.logo img {width: 100%;}
+.innerheader ul.left {width: 40%; overflow: hidden; margin-top: 32px; display: inline-block; padding-left: 300px; }
+.innerheader ul.left li {width: 25%; float: left; text-align: center;}
+.innerheader ul.right {width: 15%;text-align: center; float: right; margin-top: 25px; padding-right: 100px;}
+.innerheader ul.right li {width: 30%; border: 2px solid red; margin-right: 5px; float: left; padding: 5px 3px; border-radius: 50px; box-sizing: border-box; color: white; background: red; font-weight: bold;}
+.innerheader ul.right li:nth-child(1) {width: 50%; background: white; color: red;}
+.innerheader .tapMenu {width: 100%;}
+.innerheader .tapMenu ul {width: 100%; padding: 0px; margin-top: 25px; border: 1px solid #CCCCCC; box-sizing: border-box; overflow: hidden;}
+.innerheader .tapMenu ul li {width: 10%; height: 35px ; border-right: 1px solid #CCCCCC; float: left; box-sizing: border-box; padding: 10px; font-size: 14px; color: #707070;}
+.innerheader .tapMenu ul li:nth-child(1) {width: 2.5%;}
+.innerheader .tapMenu ul i.fa-home {width: 100%; color: #CCCCCC; font-size: 25px; transform: translate(0%,-20%);}
+.innerheader .tapMenu ul i.fa-chevron-down {color: #CCCCCC; margin-left: 30px;}
+
+/* top */
+.top {width: 100%;}
+.top .inner {width: 1920px; margin-top: 100px;}
+.top .inner .titBox {text-align: center; margin-bottom: 60px;}
+.top .inner .titBox h2 {font-size: 65px; margin-bottom: 30px;}
+.top .inner .titBox h2 span {color: red; margin-right: 20px;}
+.top .inner ul.top {width: 100%; overflow: hidden; display: flex;}
+.top .inner ul.top li {width: 40%;}
+.top .inner ul.top li:nth-child(2) {margin: 0 150px;}
+.top .inner ul.top li .imgBox {width: 100%; position: relative;}
+.top .inner ul.top li .imgBox::before {content: 'D-26'; background: red; padding: 15px 10px; color: #fff; font-weight: bold; position: absolute;}
+.top .inner ul.top li .imgBox img {width: 100%;}
+.top .inner ul.top li h3 {font-size: 25px; text-align: center; font-weight: 800; margin: 10px 0; }
+.top .inner ul.top li .date {text-align: center; color: #A8A8A8; font-weight: bold;}
+.top .inner ul.btn {width: 4%;justify-content: space-between; display: flex; margin: 30px auto;} 
+.top .inner ul.btn li {display: inline-block;  width: 5%; border: 1px solid red; width: 15px; height: 15px; border-radius: 50%; margin-bottom: 150px;}
+.top .inner ul.btn li:nth-child(1) {background: red;}
+
+/* bottom */
+.bottom {width: 100%;}
+.bottom .inner {width: 1400px; height: 850px; margin: 0 auto;}
+.bottom .inner ul.top {width: 70%; border: 1px solid #707070; display: flex; justify-content: space-between; margin: auto; margin-bottom: 60px;}
+.bottom .inner ul.top li {width: 100%; border-left: 1px solid #707070; text-align: center; font-size: 23px; padding: 10px 0; font-weight: bold;}
+.bottom .inner ul.top li:nth-child(1) {background: red; color: white;}
+.bottom .inner ul.bottom {width: 90%; overflow: hidden; margin: 0 auto; border-bottom: 1px solid #4B4B4B;}
+.bottom .inner ul.bottom li {width: 30%; float: left;  text-align: center; margin-right: 5%; } 
+.bottom .inner ul.bottom li:nth-child(3), .bottom .inner ul.bottom li:nth-child(6) {margin-right: 0;}
+.bottom .inner ul.bottom li a {width: 100%; height: 100%; display: block; }
+.bottom .inner ul.bottom li a img {width: 400px; height: 300px; margin-bottom: 10px; transition: all 0.3s;}
+.bottom .inner ul.bottom li h3 {font-size: 20px; font-weight: 800; margin-bottom: 5px;}
+.bottom .inner ul.bottom li .date {font-size: 14px; color: #A8A8A8; font-weight: bold; margin-bottom: 40px;}
+.bottom .num {position: relative; color: #4B4B4B;}
+.bottom .num .btn {background: red; display: inline-block; width: 25px; height: 25px; text-align: center; color: white; font-size: 14px;  line-height: 1.8; border-radius: 50%; margin-top: 30px; transform: translateX(670px);}
+.bottom .num .fa-chevron-left {position: absolute; left: 637px; top: 35px;}
+.bottom .num .fa-chevron-right {position: absolute; right: 672px; top: 35px;}
+
+.bottom .inner ul.bottom li a:hover img {transform: scale(1.05);}
+.bottom .inner ul.top li a:hover img {transform:scale(1.05)}
+
+
+
+
+
+
+/* footer */
+footer {width: 100%; height: 280px; background: url(../img/back.png) no-repeat; margin-top: 200px; clear: both; }
+.contents {width: 80%; margin: 0 auto; overflow: hidden; padding-top: 120px;}
+.contents h1 {width: 30%; float: left;}
+.contents h1 img {width: 35%; padding-left: 150px; padding-top: 30px;}
+.contents p {width: 55%;float: left; line-height: 2;}
+.contents ul {width: 11%; float: left;}
+.contents ul li {width: 30%; height: 30%; border: 1px solid white; float: left; margin-right: 8px; box-sizing: border-box;}
+.contents ul li img {width: 100%;}
+.contents ul li:nth-child(4) {margin-right: 0;}
+.contents ul li:nth-child(1) {width: 100%; margin-bottom: 10px; border: 0;}
+
+
+
+
+
+
+
+
+
+
