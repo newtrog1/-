@@ -1,0 +1,108 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+
+
+/* Layout */
+body {font-family:'Nanum Gothic', sans-serif;}
+.wrap {width: 100%; overflow: hidden;}
+header {width: 100%; height: 110px;}
+.innerheader {width: 100%;}
+.innerheader .top {background: #4B4B4B; width: 100%;}
+.innerheader .top ul {width: 100%; display: flex; margin-left: 78%; padding: 4px; font-size: 14px;}
+.innerheader .top ul li {margin-right: 30px; color: white;}
+.innerheader .top ul li span {color: #AAFCFF;}
+.innerheader h1.logo {width: 13%;display:block; float: left; margin-top: 25px; padding-left: 130px;}
+.innerheader h1.logo img {width: 100%;}
+.innerheader ul.left {width: 40%; overflow: hidden; margin-top: 32px; display: inline-block; padding-left: 300px;}
+.innerheader ul.left li {width: 25%; float: left; text-align: center;}
+.innerheader ul.right {width: 15%;text-align: center; float: right; margin-top: 25px; padding-right: 100px;}
+.innerheader ul.right li {width: 30%; border: 2px solid red; margin-right: 5px; float: left; padding: 5px 3px; border-radius: 50px; box-sizing: border-box; background: red; color: white; font-weight: bold;}
+.innerheader ul.right li:nth-child(1) {width: 50%; color: red; background: white;}
+
+/* visual */
+.visual {width: 100%;}
+.visual .slide {width: 92%; height: 500px; overflow: hidden; margin: 0 auto;}
+.visual .slide img {width: 100%; border-radius: 30px;}
+.visual .bottomBox {width: 90%; margin: 0 auto;}
+.visual .bottomBox ul.list {width: 100%; margin-left: 142px; position: relative;}
+.visual .bottomBox ul.list li {width: 14%; float: left; color: #707070; font-weight: bold; margin-bottom: 40px; transition: all 0.2s;}
+.visual .bottomBox ul.list li::before {position: absolute; content: ''; width: 50px; height: 50px; border-radius: 50px; background: rgb(243, 243, 243); transform: translate(-55px, -5px); z-index: -1;}
+.visual .bottomBox ul li img {width: 18%; display: block; float: left; margin-right: 7px; h}
+
+.visual .bottomBox ul.btnBox {width: 105%; height: 220px; overflow: hidden; margin: 0 auto 200px; padding-top: 10px;}
+.visual .bottomBox ul.btnBox li {width: 30%; float: left; margin-right: 3%; box-shadow: 10px 10px 10px rgba(0,0,0,0.2); border-radius: 20px; overflow: hidden; position: relative; transition: all 0.3s;}
+.visual .bottomBox ul.btnBox li img {width: 100%;}
+.visual .bottomBox ul.btnBox li p.a {position: absolute; left: 50%; top: 20%; color: #fff; font-size: 14px;}
+.visual .bottomBox ul.btnBox li p.a span {display: block; font-size: 25px; color: #fff; margin-bottom: 20px; font-weight: 800; letter-spacing: 1px;}
+.visual .bottomBox ul.btnBox li p.b {position: absolute; left: 10%; top: 20%; font-size: 25px; font-weight: 800; color: rgb(255, 105, 36);}
+.visual .bottomBox ul.btnBox li p.b span {display: block; margin-top: 20px; font-size: 14px; color: rgb(70, 70, 70); line-height: 1.3;}
+
+.visual .bottomBox ul.btnBox li:hover, .visual .bottomBox ul.btnBox li:focus {transform:translateY(-8px); transition: all 0.3s; box-shadow: 10px 10px 10px rgba(0,0,0,0.4); }
+
+
+
+.visual .bottomBox .event {width: 100%;}
+.visual .event {width: 80%; margin: 0 auto; position: relative;}
+.visual .event h1 {font-size: 50px; text-align: center; margin-bottom: 40px;}
+.visual .event h1 span {color: red;}
+.visual .event p {display: inline; margin-left: 670px; padding: 10px 30px; border: 2px solid red; border-radius: 50px; color: red; font-weight: bold; transition: all 0.3s; box-sizing: border-box;}
+.visual .event ul {width: 80%; display: flex; justify-content: space-between; margin: 110px auto;} 
+.visual .event ul li {width: 32%; position: relative; border-radius: 20px; overflow: hidden;}
+.visual .event ul li::before {content: ''; background: white; position: absolute; width: 0px; height: 390px; top: 0; opacity: 0.6;}
+.visual .event ul li::after {content: '자세히 보기'; position: absolute; top: 50%; left: 37%; font-size: 16px; font-weight: bold; border: 1px solid black; width: 120px; height: 30px; text-align: center; line-height: 2; border-radius: 50px; opacity: 0; color: black;}
+.visual .event ul li img {width: 100%;}
+.visual .event i {color: red; font-size: 30px;}
+/* .visual .event i.fa-chevron-left {position:absolute; top: 65%; left: 3%;}
+.visual .event i.fa-chevron-right {position:absolute; top: 65%; right: 3%;}  */
+
+/* hover */
+.innerheader ul.left li:hover {color: red; font-weight: bold; transition: all 0.3s;}
+
+.visual .bottomBox ul.list li:hover, .visual .bottomBox ul li:focus {transform: scale(1.1); transition: all 0.3s;}
+.visual .bottomBox ul.list li:nth-child(1):hover::before { background: rgb(255, 206, 206);}
+.visual .bottomBox ul.list li:nth-child(2):hover::before { background: rgb(255, 206, 206);}
+.visual .bottomBox ul.list li:nth-child(3):hover::before { background: rgb(255, 206, 206);}
+.visual .bottomBox ul.list li:nth-child(4):hover::before { background: rgb(255, 206, 206);}
+.visual .bottomBox ul.list li:nth-child(5):hover::before { background: rgb(255, 206, 206);}
+.visual .bottomBox ul.list li:nth-child(6):hover::before { background: rgb(255, 206, 206);}
+
+.visual .event p:hover {background: red; color: #fff; transition: all 0.3s;}
+.visual .event ul li:hover:before {content: ''; background: white; position: absolute; width: 390px; height: 390px; top: 0; transition: all 0.3s;}
+.visual .event ul li:hover:after {opacity: 1;}
+
+
+
+
+/* footer */
+footer {width: 100%; height: 240px; background: url(../img/back.png) no-repeat;}
+.contents {width: 80%; margin: 0 auto; overflow: hidden; padding-top: 120px;}
+.contents h1 {width: 30%; float: left;}
+.contents h1 img {width: 35%; padding-left: 150px; padding-top: 30px;}
+.contents p {width: 55%;float: left; line-height: 2;}
+.contents ul {width: 11%; float: left;}
+.contents ul li {width: 30%; height: 30%; border: 1px solid white; float: left; margin-right: 8px; box-sizing: border-box;}
+.contents ul li img {width: 100%;}
+.contents ul li:nth-child(4) {margin-right: 0;}
+.contents ul li:nth-child(1) {width: 100%; margin-bottom: 10px; border: 0;}
+
+
+
+
+
+
+
+
+
